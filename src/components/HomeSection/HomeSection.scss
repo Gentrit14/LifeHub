@@ -1,0 +1,150 @@
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-section {
+  position: relative;
+  color: #fff;
+  padding: 60px 20px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    270deg,
+    #0f2027,
+    #203a43,
+    #2c5364,
+    #4a00e0,
+    #6a11cb,
+    #2575fc
+  );
+  background-size: 1200% 1200%;
+  animation: gradientShift 20s ease infinite;
+
+  .hero-content {
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 900px;
+
+    .stat {
+      flex: 1 1 200px;
+      margin: 1rem;
+      padding: 2rem;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: white;
+
+      h2 {
+        font-size: 2rem;
+        color: #4cc9f0;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 0 8px rgba(76, 201, 240, 0.7);
+      }
+
+      p {
+        font-size: 1rem;
+        color: #e0e0e0;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  // Responsive rregullime
+
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+
+    .hero-content {
+      max-width: 90%;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .achievements {
+      max-width: 100%;
+
+      .stat {
+        flex: 1 1 100%;
+        margin: 0.5rem 0;
+        padding: 1.5rem;
+
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 30px 10px;
+
+    .hero-content {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    .achievements {
+      .stat {
+        padding: 1rem;
+
+        h2 {
+          font-size: 1.4rem;
+        }
+
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}

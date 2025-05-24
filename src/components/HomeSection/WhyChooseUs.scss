@@ -1,0 +1,63 @@
+.why-choose-us {
+  padding: 4rem 2rem;
+  background: #f5f9fc;  // very light blueish background
+  text-align: center;
+
+  h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+    color: #222;
+  }
+
+  .benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .benefit-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    flex: 1 1 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .icon {
+      font-size: 3.5rem;
+      color: #2a9d8f; // teal-ish color, fresh & professional
+      margin-bottom: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #264653;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    .benefits-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .benefit-card {
+      max-width: 100%;
+    }
+  }
+}
