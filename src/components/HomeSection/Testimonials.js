@@ -1,24 +1,27 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import "./Testimonials.scss";
+import Person1 from '../../assets/img/person1.jpg'
+import Person2 from '../../assets/img/person3.jpg'
+import Person3 from '../../assets/img/person3.jpg'
 
 const testimonials = [
   {
     name: "Ardita Berisha",
     role: "Student",
-    photo: "/images/testimonial1.jpg", // vendos foton tënde këtu
+    photo: Person1, // vendos foton tënde këtu
     quote: "Programi më ndihmoi të zhvillohem profesionalisht dhe të gjej punën e ëndrrave.",
   },
   {
     name: "Besart Gashi",
     role: "Developer",
-    photo: "/images/testimonial2.jpg",
+    photo: Person2,
     quote: "Mësova gjëra praktike që nuk i kam marrë askund tjetër.",
   },
   {
     name: "Elira Hoxha",
     role: "Entrepreneur",
-    photo: "/images/testimonial3.jpg",
+    photo: Person3,
     quote: "Shërbimi ishte shumë mbështetës dhe profesional.",
   },
 ];
