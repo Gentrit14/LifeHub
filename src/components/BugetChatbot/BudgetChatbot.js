@@ -10,7 +10,7 @@ const BudgetChatbot = () => {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const API_KEY = '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';
+  const API_KEY = '///';
   const MODEL = 'deepseek/deepseek-r1:free';
 
   const sendMessage = async () => {
