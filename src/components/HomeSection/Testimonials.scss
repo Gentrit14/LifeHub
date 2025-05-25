@@ -1,5 +1,7 @@
 .testimonials-section {
-  background: linear-gradient(90deg, #0077ff, #00c2ff); // sfond i gjelbër i lehtë
+  background: linear-gradient(135deg, #eef2ff, #d6e0ff);
+  color: #1a2637;
+
   padding: 4rem 2rem;
 
   .testimonials-header {
@@ -8,13 +10,13 @@
 
     h2 {
       font-size: 2.5rem;
-      color: #fff;
+      color: #1a2637;
       margin-bottom: 0.5rem;
     }
 
     p {
       font-size: 1.1rem;
-      color: #fff;
+      color: #1a2637;
     }
   }
 
@@ -51,7 +53,7 @@
       .testimonial-name {
         font-weight: bold;
         font-size: 1.05rem;
-        color: #0077ff;
+        color: #1a2637;
       }
 
       .testimonial-role {

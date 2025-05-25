@@ -19,7 +19,7 @@ const Footer = () => {
           <Link to="/feauters">Features</Link>
           <Link to="/programs">Programs</Link>
           <Link to="/community">Community</Link>
-          <Link to="/download">Download App</Link>
+          <Link to="/budget">ChatBot</Link>
           </nav>
 
           <div className="footer-socials">

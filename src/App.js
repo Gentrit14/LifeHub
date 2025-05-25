@@ -8,7 +8,11 @@ import About from "./pages/About";
 import Features from "./pages/Feauters";
 import Programs from "./pages/Programs";
 import Community from "./pages/Community";
-import Budget from "./pages/Budget"
+import Budget from "./pages/Budget";
+import Contact from "./pages/Contact";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/community" element={<Community />} />
           <Route path="/budget" element={<Budget />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
         </Routes>
       </main>
       <Footer />

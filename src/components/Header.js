@@ -3,7 +3,8 @@ import "./Header.scss";
 import MobileMenu from "./MobileMenu";
 import CustomButton from "./CustomButton";
 import { Link } from "react-router-dom";
-import Logo1 from '../assets/img/header-logo.png'
+import Logo1 from '../assets/img/header-logo.png';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Header() {
@@ -30,6 +31,8 @@ export default function Header() {
     console.log("Language selected:", selectedLang);
   };
 
+    const navigate = useNavigate();
+
   return (
     <header className="main-header">
       <div className="logo"><img src={Logo1} alt="logo" /></div>
@@ -41,7 +44,7 @@ export default function Header() {
           <Link to="/feauters">Features</Link>
           <Link to="/programs">Programs</Link>
           <Link to="/community">Community</Link>
-          <Link to="/budget">Download App</Link>
+          <Link to="/budget">ChatBot</Link>
 
         </ul>
       </nav>
@@ -52,7 +55,7 @@ export default function Header() {
           <span className="slider"></span>
         </label>
 
-        <CustomButton onClick={() => console.log("Contact clicked")}>
+        <CustomButton onClick={() => navigate('/contact')}>
           Contact
         </CustomButton>
 
