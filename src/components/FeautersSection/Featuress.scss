@@ -1,0 +1,246 @@
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.features-page {
+  color: #102c57;
+  background: #f9fbfe;
+  line-height: 1.5;
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  // 1. Hero Section
+  .features-hero {
+    padding: 5rem 0;
+    background: linear-gradient(270deg, #2575fc, #6a11cb, #4a00e0);
+    background-size: 600% 600%;
+    animation: gradientShift 20s ease infinite;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      font-weight: 400;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  // 2. Core Features Section
+  .core-features {
+    padding: 4rem 0;
+
+    .features-grid {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .feature-card {
+      flex: 1 1 280px;
+      background: white;
+      border-radius: 14px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(76, 201, 240, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(76, 201, 240, 0.4);
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        color: #2575fc;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+        color: #555;
+      }
+    }
+  }
+
+  // 3. Feature Highlight Section
+  .feature-highlight {
+    padding: 5rem 0;
+
+    .highlight-content {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      .text-side {
+        flex: 1;
+        h2 {
+          font-size: 2.5rem;
+          font-weight: 700;
+          color: #102c57;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 1.15rem;
+          color: #444;
+          max-width: 500px;
+        }
+      }
+
+      .image-side {
+        flex: 1;
+
+        img {
+          max-width: 100%;
+          border-radius: 16px;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  // 4. Benefits Section
+  .benefits-section {
+    padding: 4rem 0;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #102c57;
+      margin-bottom: 2rem;
+    }
+
+    .benefits-list {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+
+      li {
+        font-size: 1.1rem;
+        margin: 1rem 0;
+        color: #555;
+
+        &:before {
+          content: "✅";
+          margin-right: 0.75rem;
+        }
+      }
+    }
+  }
+
+  // 5. Testimonial Snippet
+  .testimonial-snippet {
+    padding: 3rem 0;
+    background: #eaf1f8;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #555;
+    box-shadow: 0 6px 15px rgba(37, 117, 252, 0.15);
+
+    blockquote {
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #2575fc;
+    }
+  }
+
+  // 6. Call to Action
+  .features-cta {
+    padding: 4rem 0;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #102c57;
+    }
+
+  }
+
+  // Responsive
+  @media (max-width: 900px) {
+    .feature-highlight {
+      .highlight-content {
+        flex-direction: column;
+
+        .image-side {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .features-hero {
+      padding: 3rem 1rem;
+
+      .title {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    .core-features {
+      .features-grid {
+        flex-direction: column;
+      }
+    }
+
+    .benefits-section {
+      padding: 3rem 1rem;
+
+      .benefits-list li {
+        font-size: 1rem;
+      }
+    }
+
+    .features-cta {
+      padding: 3rem 1rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

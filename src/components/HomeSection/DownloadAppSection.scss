@@ -1,0 +1,70 @@
+.download-app-section {
+  padding: 4rem 1rem;
+  background-color: #f4f7fb;
+  border-radius: 20px;
+  margin: 3rem 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .text-content {
+    flex: 1;
+    min-width: 300px;
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #0b2545;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #4f4f4f;
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
+  .image-content {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+
+    .mockup {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1.5rem;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .buttons {
+      justify-content: center;
+    }
+
+    .image-content {
+      margin-top: 2rem;
+    }
+  }
+}

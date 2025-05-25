@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Header.scss";
 import MobileMenu from "./MobileMenu";
 import CustomButton from "./CustomButton";
+import { Link } from "react-router-dom";
 import Logo1 from '../assets/img/header-logo.png'
+
 
 export default function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -34,10 +36,13 @@ export default function Header() {
 
       <nav className="nav-center desktop-menu">
         <ul className="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#programs">Programs</a></li>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/feauters">Features</Link>
+          <Link to="/programs">Programs</Link>
+          <Link to="/community">Community</Link>
+          <Link to="/budget">Download App</Link>
+
         </ul>
       </nav>
 

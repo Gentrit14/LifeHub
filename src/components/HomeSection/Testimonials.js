@@ -7,6 +7,8 @@ import Person3 from "../../assets/img/person3.jpg";
 import Person4 from "../../assets/img/person3.jpg";
 import Person5 from "../../assets/img/person3.jpg";
 
+
+
 const testimonials = [
   { name: "Arbër Gashi", role: "Full-Stack Developer", quote: "Shkolla Digjitale më ka ndryshu jetën. Faleminderit për gjithçka!", photo: Person1 },
   { name: "Elira Krasniqi", role: "Designer", quote: "Një eksperiencë që do ta kujtoj gjithmonë me shumë dashuri.", photo: Person2 },
@@ -38,7 +40,7 @@ export default function Testimonials() {
         <Carousel
           breakPoints={breakPoints}
           enableAutoPlay
-          autoPlaySpeed={4000}
+          autoPlaySpeed={2000}
           showArrows={false}
           pagination={false}
           enableMouseSwipe

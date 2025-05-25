@@ -1,0 +1,36 @@
+// OurValuesSection.scss
+.our-values-section {
+  padding: 4rem 1rem;
+  background: #fefefe;
+
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0b2545;
+    margin-bottom: 2rem;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+    .value-card {
+      background: #f4f7fb;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+      h4 {
+        color: #0b2545;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: #555;
+        font-size: 1rem;
+      }
+    }
+  }
+}

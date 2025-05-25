@@ -1,0 +1,22 @@
+// OurMissionSection.scss
+.our-mission-section {
+  padding: 4rem 1rem;
+  background: #f4f7fb;
+  text-align: center;
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    color: #0b2545;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    color: #555;
+  }
+}

@@ -1,0 +1,61 @@
+.social-proof-section {
+  padding: 5rem 1rem;
+  background-color: #fafbfc;
+  text-align: center;
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #0b2545;
+    margin-bottom: 3rem;
+  }
+
+  .media-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4rem;
+
+    img {
+      height: 50px;
+      filter: grayscale(100%);
+      opacity: 0.7;
+      transition: all 0.3s ease;
+
+      &:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+        transform: scale(1.08);
+      }
+    }
+  }
+
+  .quote-card {
+    background: #ffffff;
+    border: 1px solid #e0e6ed;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+
+    .quote {
+      font-size: 1.25rem;
+      font-style: italic;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .author {
+      font-weight: 500;
+      color: #6b7280;
+    }
+  }
+}

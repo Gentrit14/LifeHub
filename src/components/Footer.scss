@@ -1,0 +1,94 @@
+.main-footer {
+  background-color: #f0f4f8; // ngjyrë moderne e butë
+  width: 100%;
+  padding: 3rem 0 2rem;
+
+  .footer-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #d0d8e0;
+
+    .footer-logo img {
+      height: 50px;
+    }
+
+    .footer-nav {
+      display: flex;
+      gap: 1.8rem;
+
+      a {
+        font-weight: 500;
+        text-decoration: none;
+        color: #0b2545;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #0077b6;
+        }
+      }
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        font-size: 1.2rem;
+        color: #0b2545;
+        transition: transform 0.3s, color 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+          color: #0077b6;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #777;
+  }
+}
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+
+    .footer-nav {
+      flex-direction: column;
+      gap: 1rem;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+
+    .footer-socials {
+      justify-content: center;
+    }
+  }
+
+  .footer-logo img {
+    height: 45px;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+    padding-top: 1rem;
+  }
+}

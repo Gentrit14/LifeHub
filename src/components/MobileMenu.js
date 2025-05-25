@@ -1,5 +1,6 @@
 import React from "react";
 import CustomButton from "./CustomButton";
+import { Link } from "react-router-dom";
 import "./Header.scss"; // përdorim të njëjtin CSS
 
 export default function MobileMenu({ isOpen, toggleMenu }) {
@@ -11,11 +12,25 @@ export default function MobileMenu({ isOpen, toggleMenu }) {
   return (
     <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
       <ul>
-        <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-        <li><a href="#services" onClick={toggleMenu}>Services</a></li>
-        <li><a href="#about" onClick={toggleMenu}>About</a></li>
-        <li><a href="#programs" onClick={toggleMenu}>Programs</a></li>
-        <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+        <li>
+            <Link to="/" onClick={toggleMenu}>Home</Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={toggleMenu}>About Us</Link>
+          </li>
+          <li>
+            <Link to="/feauters" onClick={toggleMenu}>Features</Link>
+          </li>
+          <li>
+            <Link to="/programs" onClick={toggleMenu}>Programs</Link>
+          </li>
+          <li>
+            <Link to="/community" onClick={toggleMenu}>Community</Link>
+          </li>
+          <li>
+            <Link to="/download" onClick={toggleMenu}>Download App</Link>
+          </li>
+
       </ul>
 
       {/* Language Toggle in Mobile */}
