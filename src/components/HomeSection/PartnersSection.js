@@ -20,16 +20,16 @@ const partners = [
 const PartnersSection = () => {
   return (
     <section className="partners-section">
-      <div className="partners-header">
-        <h2>Our Trusted Partners</h2>
-        <p>These organizations support our vision for innovation and growth in Kosovo.</p>
-      </div>
-      <div className="partners-logos">
-        {partners.map((partner, index) => (
-          <div className="partner-logo" key={index} title={partner.name}>
-            <img src={partner.logo} alt={partner.name} />
-          </div>
-        ))}
+      <div className="container">
+        <h2 className="title">Our Trusted Partners</h2>
+        <p className="subtitle">These organizations support our vision for innovation and growth in Kosovo.</p>
+        <div className="partners-logos">
+          {partners.map((partner, index) => (
+            <div className="logo-wrapper" key={index}>
+              <img src={partner.logo} alt={partner.name} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

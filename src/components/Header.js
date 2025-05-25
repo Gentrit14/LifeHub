@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Header.scss";
 import MobileMenu from "./MobileMenu";
 import CustomButton from "./CustomButton";
+import Logo1 from '../assets/img/header-logo.png'
 
 export default function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function Header() {
 
   return (
     <header className="main-header">
-      <div className="logo">LifeHub</div>
+      <div className="logo"><img src={Logo1} alt="logo" /></div>
 
       <nav className="nav-center desktop-menu">
         <ul className="menu">

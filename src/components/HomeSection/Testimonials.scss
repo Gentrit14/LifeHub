@@ -1,59 +1,79 @@
 .testimonials-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 4rem 1rem;
-  text-align: center;
-  background: #f9f9f9;
-  border-radius: 10px;
+  background: linear-gradient(90deg, #0077ff, #00c2ff); // sfond i gjelbër i lehtë
+  padding: 4rem 2rem;
 
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #222;
-  }
-
-  p {
-    color: #666;
+  .testimonials-header {
+    text-align: center;
     margin-bottom: 2rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #fff;
+    }
   }
 
+  .testimonials-carousel {
+    .testimonial-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      margin: 0 1rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .testimonial-photo img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border: 3px solid #00c2ff;
+      }
+
+      .testimonial-quote {
+        font-size: 1.1rem;
+        font-style: italic;
+        color: #444;
+        margin-bottom: 1rem;
+      }
+
+      .testimonial-name {
+        font-weight: bold;
+        font-size: 1.05rem;
+        color: #0077ff;
+      }
+
+      .testimonial-role {
+        font-size: 0.95rem;
+        color: #666;
+      }
+    }
+  }
+}
+
+// Responsive tweaks
+@media (max-width: 768px) {
   .testimonial-card {
+    margin: 0 0.5rem;
     padding: 1.5rem;
-    background: white;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    border-radius: 12px;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
-  .testimonial-photo img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 3px solid #0077ff;
+  .testimonials-header h2 {
+    font-size: 2rem;
   }
 
-  .testimonial-quote {
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-
-  .testimonial-name {
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
-    color: #0077ff;
-  }
-
-  .testimonial-role {
-    font-size: 0.9rem;
-    color: #999;
+  .testimonials-header p {
+    font-size: 1rem;
   }
 }
