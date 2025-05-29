@@ -23,10 +23,11 @@ const Footer = () => {
           </nav>
 
           <div className="footer-socials">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedinIn /></a>
-            <a href="#"><FaTiktok /></a>
+            <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+            <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://linkedin.com/in/yourpage" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+            <a href="https://tiktok.com/@yourpage" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+
           </div>
         </div>
 
