@@ -1,5 +1,4 @@
 import React from "react";
-import Carousel from "react-elastic-carousel";
 import "./Testimonials.scss";
 import Person1 from "../../assets/img/person1.jpg";
 import Person2 from "../../assets/img/person3.jpg";
@@ -22,12 +21,7 @@ const testimonials = [
   { name: "Leotrim Hyseni", role: "Backend Developer", quote: "Inxhinierët këtu janë shumë profesionalë dhe të afërt.", photo: Person5 },
 ];
 
-const breakPoints = [
-  { width: 0, itemsToShow: 1 },
-  { width: 768, itemsToShow: 2 },
-  { width: 1024, itemsToShow: 3 },
-  { width: 1400, itemsToShow: 4 },
-];
+
 
 export default function Testimonials() {
   return (
@@ -37,15 +31,7 @@ export default function Testimonials() {
         <p>Zani i suksesit të vërtetë vjen prej atyne që kanë kaluar rrugën tonë.</p>
       </div>
       <div className="testimonials-carousel">
-        <Carousel
-          breakPoints={breakPoints}
-          enableAutoPlay
-          autoPlaySpeed={2000}
-          showArrows={false}
-          pagination={false}
-          enableMouseSwipe
-          infiniteLoop
-        >
+
           {testimonials.map((item, index) => (
             <div className="testimonial-card" key={index}>
               <div className="testimonial-photo">
@@ -56,7 +42,6 @@ export default function Testimonials() {
               <p className="testimonial-role">{item.role}</p>
             </div>
           ))}
-        </Carousel>
       </div>
     </section>
   );
