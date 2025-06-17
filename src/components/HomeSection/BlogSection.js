@@ -35,7 +35,7 @@ const BlogSection = () => {
               <h3 className="blog-title">{post.title}</h3>
               <p className="blog-description">{post.description}</p>
               <CustomButton>
-          <FormattedMessage id="Blog.buttonText" defaultMessage="Read More" />
+          <FormattedMessage id="Blog.buttonText" defaultMessage="Read Moree" />
         </CustomButton>
             </div>
           ))}
